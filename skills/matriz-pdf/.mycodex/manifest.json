@@ -1,0 +1,21 @@
+{
+  "name": "matriz-pdf",
+  "version": "0.1.0",
+  "description": "Read, create, edit, extract, redact, and visually validate PDF files.",
+  "author": { "name": "Matriz AI" },
+  "homepage": "https://github.com/Matriz-AI/registry/tree/main/skills/matriz-pdf",
+  "repository": "https://github.com/Matriz-AI/registry",
+  "path": "skills/matriz-pdf",
+  "license": "MIT",
+  "interface": {
+    "displayName": "Matriz PDF",
+    "shortDescription": "Create, modify, and validate PDF files.",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Execute"],
+    "defaultPrompt": [
+      "Extract the tables from this PDF into a structured summary.",
+      "Merge these PDFs and add page numbers.",
+      "Redact the sensitive information in this document securely."
+    ]
+  }
+}

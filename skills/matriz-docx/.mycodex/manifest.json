@@ -1,0 +1,21 @@
+{
+  "name": "matriz-docx",
+  "version": "0.1.0",
+  "description": "Create, edit, review, and visually validate professional DOCX documents.",
+  "author": { "name": "Matriz AI" },
+  "homepage": "https://github.com/Matriz-AI/registry/tree/main/skills/matriz-docx",
+  "repository": "https://github.com/Matriz-AI/registry",
+  "path": "skills/matriz-docx",
+  "license": "MIT",
+  "interface": {
+    "displayName": "Matriz DOCX",
+    "shortDescription": "Create and edit Word documents with visual QA.",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Execute"],
+    "defaultPrompt": [
+      "Create a polished DOCX proposal from these notes.",
+      "Review this Word document and fix its formatting.",
+      "Compare these two DOCX files and summarize the changes."
+    ]
+  }
+}
