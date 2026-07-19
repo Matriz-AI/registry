@@ -1,0 +1,16 @@
+{
+  "name": "internal-comms",
+  "version": "0.1.0",
+  "description": "Write internal communications including updates, newsletters, FAQs, and incident reports.",
+  "author": { "name": "Anthropic" },
+  "homepage": "https://github.com/anthropics/skills/tree/main/skills/internal-comms",
+  "repository": "https://github.com/Matriz-AI/registry",
+  "path": "skills/internal-comms",
+  "license": "Apache-2.0",
+  "interface": {
+    "displayName": "Internal Communications",
+    "shortDescription": "Write effective internal communications.",
+    "category": "Communication",
+    "capabilities": ["Read", "Write"]
+  }
+}

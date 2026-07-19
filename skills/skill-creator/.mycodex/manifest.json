@@ -1,0 +1,16 @@
+{
+  "name": "skill-creator",
+  "version": "0.1.0",
+  "description": "Create, improve, evaluate, and optimize reusable agent skills.",
+  "author": { "name": "Anthropic" },
+  "homepage": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+  "repository": "https://github.com/Matriz-AI/registry",
+  "path": "skills/skill-creator",
+  "license": "Apache-2.0",
+  "interface": {
+    "displayName": "Skill Creator",
+    "shortDescription": "Create and improve agent skills.",
+    "category": "AI",
+    "capabilities": ["Read", "Write", "Execute"]
+  }
+}

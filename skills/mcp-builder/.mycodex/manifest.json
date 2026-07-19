@@ -1,0 +1,16 @@
+{
+  "name": "mcp-builder",
+  "version": "0.1.0",
+  "description": "Build high-quality MCP servers that connect LLMs to external APIs and services.",
+  "author": { "name": "Anthropic" },
+  "homepage": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
+  "repository": "https://github.com/Matriz-AI/registry",
+  "path": "skills/mcp-builder",
+  "license": "Apache-2.0",
+  "interface": {
+    "displayName": "MCP Builder",
+    "shortDescription": "Build Model Context Protocol servers.",
+    "category": "Development",
+    "capabilities": ["Read", "Write", "Execute", "Network"]
+  }
+}
