@@ -1,6 +1,6 @@
 {
   "name": "matriz-xlsx",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Create, edit, analyze, and validate Excel workbooks with formula and visual QA.",
   "author": { "name": "Matriz AI" },
   "homepage": "https://github.com/Matriz-AI/registry/tree/main/skills/matriz-xlsx",

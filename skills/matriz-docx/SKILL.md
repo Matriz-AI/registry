@@ -25,7 +25,7 @@ Use a task-local working copy. Preserve the original file unless the user explic
 ## Verification gate
 
 1. Reopen the produced DOCX and inspect headings, paragraphs, tables, headers, footers, and metadata.
-2. Render it with LibreOffice in headless mode when available.
+2. Render it with LibreOffice when available; otherwise use the local Microsoft Word renderer.
 3. Inspect every rendered page for overflow, broken tables, missing glyphs, accidental page breaks, and header/footer drift.
 4. Repeat after every layout-sensitive change. Deliver only the DOCX unless the user requests a PDF or preview.
 
@@ -35,7 +35,7 @@ Use a task-local working copy. Preserve the original file unless the user explic
 - `scripts/normalize_runs.py`: coalesce adjacent equivalent text runs before targeted OOXML work.
 - `scripts/add_comment.py`: add a review comment to a found text run.
 - `scripts/accept_revisions.py`: create a clean copy accepting tracked insertions and deletions.
-- `render_docx.py`: create page PNGs (and optionally a PDF) with isolated LibreOffice state.
+- `render_docx.py`: create page PNGs (and optionally a PDF), using LibreOffice first and Microsoft Word as a local fallback.
 
 ## Safety
 

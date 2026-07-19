@@ -34,4 +34,4 @@ Start by identifying the audience, purpose, and visual source. Preserve an exist
 - `scripts/add_slide.py`: append an editable title-and-body slide.
 - `scripts/validate_pptx.py`: flag empty slides and off-canvas shapes.
 - `scripts/clean_pptx.py`: remove notes and/or review comments only on explicit request.
-- `render_pptx.py`: create slide PNGs (and optionally a PDF) with isolated LibreOffice state.
+- `render_pptx.py`: create slide PNGs (and optionally a PDF), using LibreOffice first and Microsoft PowerPoint as a local fallback.

@@ -27,7 +27,7 @@ Inspect the workbook before editing it. Preserve existing formulas, named ranges
 - `scripts/inspect_xlsx.py`: report sheet dimensions, visibility, formula counts, and defined names.
 - `scripts/validate_xlsx.py`: detect cached formula errors and external workbook references.
 - `scripts/recalculate_xlsx.py`: recalculate through LibreOffice or mark for full recalculation on next open.
-- `render_xlsx.py`: create page PNGs (and optionally a PDF) with isolated LibreOffice state.
+- `render_xlsx.py`: create page PNGs (and optionally a PDF), using LibreOffice first and Microsoft Excel as a local fallback.
 
 ## Safety
 
