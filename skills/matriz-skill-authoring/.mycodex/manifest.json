@@ -1,0 +1,16 @@
+{
+  "name": "matriz-skill-authoring",
+  "version": "0.1.0",
+  "description": "Create and validate installable skills for the Matriz AI Marketplace.",
+  "author": { "name": "Matriz AI" },
+  "homepage": "https://github.com/Matriz-AI/registry/tree/main/skills/matriz-skill-authoring",
+  "repository": "https://github.com/Matriz-AI/registry",
+  "path": "skills/matriz-skill-authoring",
+  "license": "MIT",
+  "interface": {
+    "displayName": "Matriz Skill Authoring",
+    "shortDescription": "Create and validate Matriz Marketplace skills.",
+    "category": "AI",
+    "capabilities": ["Read", "Write", "Execute"]
+  }
+}
