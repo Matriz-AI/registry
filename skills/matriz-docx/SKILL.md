@@ -29,6 +29,14 @@ Use a task-local working copy. Preserve the original file unless the user explic
 3. Inspect every rendered page for overflow, broken tables, missing glyphs, accidental page breaks, and header/footer drift.
 4. Repeat after every layout-sensitive change. Deliver only the DOCX unless the user requests a PDF or preview.
 
+## Bundled scripts
+
+- `scripts/inspect_docx.py`: inspect paragraphs, tables, media, comments, revisions, and document parts.
+- `scripts/normalize_runs.py`: coalesce adjacent equivalent text runs before targeted OOXML work.
+- `scripts/add_comment.py`: add a review comment to a found text run.
+- `scripts/accept_revisions.py`: create a clean copy accepting tracked insertions and deletions.
+- `render_docx.py`: create page PNGs (and optionally a PDF) with isolated LibreOffice state.
+
 ## Safety
 
 - Do not accept tracked changes, remove comments, scrub metadata, or redact text unless the user explicitly requests it.

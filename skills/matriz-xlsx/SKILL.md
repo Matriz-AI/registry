@@ -22,6 +22,13 @@ Inspect the workbook before editing it. Preserve existing formulas, named ranges
 3. Recalculate with an available spreadsheet engine when possible.
 4. Render each changed worksheet or export it to PDF for visual review; fix clipped headers, unreadable columns, broken charts, and inconsistent formatting.
 
+## Bundled scripts
+
+- `scripts/inspect_xlsx.py`: report sheet dimensions, visibility, formula counts, and defined names.
+- `scripts/validate_xlsx.py`: detect cached formula errors and external workbook references.
+- `scripts/recalculate_xlsx.py`: recalculate through LibreOffice or mark for full recalculation on next open.
+- `render_xlsx.py`: create page PNGs (and optionally a PDF) with isolated LibreOffice state.
+
 ## Safety
 
 - Do not replace formulas with values unless the user explicitly requests a static export.

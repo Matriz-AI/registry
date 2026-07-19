@@ -27,3 +27,11 @@ Start by identifying the audience, purpose, and visual source. Preserve an exist
 2. Render every slide to images and inspect them at full size.
 3. Fix overlap, clipping, awkward wrapping, unbalanced composition, and chart label issues before delivery.
 4. Preserve the source deck and export a separate result unless an in-place edit is requested.
+
+## Bundled scripts
+
+- `scripts/inspect_pptx.py`: report slide size, visible text, shape counts, and notes.
+- `scripts/add_slide.py`: append an editable title-and-body slide.
+- `scripts/validate_pptx.py`: flag empty slides and off-canvas shapes.
+- `scripts/clean_pptx.py`: remove notes and/or review comments only on explicit request.
+- `render_pptx.py`: create slide PNGs (and optionally a PDF) with isolated LibreOffice state.
