@@ -1,6 +1,6 @@
 {
   "name": "matriz-pptx",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Create, edit, and visually validate polished PowerPoint presentations.",
   "author": { "name": "Matriz AI" },
   "homepage": "https://github.com/Matriz-AI/registry/tree/main/skills/matriz-pptx",
@@ -9,6 +9,7 @@
   "license": "MIT",
   "interface": {
     "displayName": "Matriz PPTX",
+    "logo": "https://raw.githubusercontent.com/Matriz-AI/registry/main/skills/matriz-pptx/assets/icon.svg",
     "shortDescription": "Create and edit PowerPoint presentations.",
     "category": "Design",
     "capabilities": ["Read", "Write", "Execute"],

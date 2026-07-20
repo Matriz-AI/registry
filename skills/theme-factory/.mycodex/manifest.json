@@ -1,6 +1,6 @@
 {
   "name": "theme-factory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Apply or generate themes for slides, documents, reports, and web artifacts.",
   "author": { "name": "Anthropic" },
   "homepage": "https://github.com/anthropics/skills/tree/main/skills/theme-factory",
@@ -9,6 +9,7 @@
   "license": "Apache-2.0",
   "interface": {
     "displayName": "Theme Factory",
+    "logo": "https://raw.githubusercontent.com/Matriz-AI/registry/main/skills/theme-factory/assets/icon.svg",
     "shortDescription": "Apply themes to visual artifacts.",
     "category": "Design",
     "capabilities": ["Read", "Write"]

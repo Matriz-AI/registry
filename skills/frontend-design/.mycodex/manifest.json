@@ -1,6 +1,6 @@
 {
   "name": "frontend-design",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Guide distinctive, intentional visual design for new or existing frontend interfaces.",
   "author": { "name": "Anthropic" },
   "homepage": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
@@ -9,6 +9,7 @@
   "license": "Apache-2.0",
   "interface": {
     "displayName": "Frontend Design",
+    "logo": "https://raw.githubusercontent.com/Matriz-AI/registry/main/skills/frontend-design/assets/icon.svg",
     "shortDescription": "Design distinctive, intentional user interfaces.",
     "category": "Design",
     "capabilities": ["Read", "Write"]

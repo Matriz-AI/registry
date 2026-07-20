@@ -1,6 +1,6 @@
 {
   "name": "canvas-design",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create original posters, visual art, and static designs as PNG or PDF documents.",
   "author": { "name": "Anthropic" },
   "homepage": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
@@ -9,6 +9,7 @@
   "license": "Apache-2.0",
   "interface": {
     "displayName": "Canvas Design",
+    "logo": "https://raw.githubusercontent.com/Matriz-AI/registry/main/skills/canvas-design/assets/icon.svg",
     "shortDescription": "Create original static visual designs.",
     "category": "Design",
     "capabilities": ["Read", "Write"]

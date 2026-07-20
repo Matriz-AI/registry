@@ -1,6 +1,6 @@
 {
   "name": "slack-gif-creator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create animated GIFs optimized for Slack using validation tools and animation guidance.",
   "author": { "name": "Anthropic" },
   "homepage": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator",
@@ -9,6 +9,7 @@
   "license": "Apache-2.0",
   "interface": {
     "displayName": "Slack GIF Creator",
+    "logo": "https://raw.githubusercontent.com/Matriz-AI/registry/main/skills/slack-gif-creator/assets/icon.svg",
     "shortDescription": "Create animated GIFs for Slack.",
     "category": "Communication",
     "capabilities": ["Read", "Write", "Execute"]

@@ -1,6 +1,6 @@
 {
   "name": "webapp-testing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Test local web applications with Playwright, including UI verification, screenshots, and logs.",
   "author": { "name": "Anthropic" },
   "homepage": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
@@ -9,6 +9,7 @@
   "license": "Apache-2.0",
   "interface": {
     "displayName": "Webapp Testing",
+    "logo": "https://raw.githubusercontent.com/Matriz-AI/registry/main/skills/webapp-testing/assets/icon.svg",
     "shortDescription": "Test web apps with Playwright.",
     "category": "Development",
     "capabilities": ["Read", "Execute"]
