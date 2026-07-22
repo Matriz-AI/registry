@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grilling"
+  short_description: "Stress-test plans through one question at a time."
+  default_prompt: "Interview me relentlessly about this decision."

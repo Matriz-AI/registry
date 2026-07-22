@@ -1,0 +1,22 @@
+{
+  "name": "grill-me",
+  "version": "1.0.0",
+  "description": "Start an explicit grilling session that stress-tests a plan, decision, design, or idea through one recommended question at a time.",
+  "author": { "name": "Matriz AI" },
+  "homepage": "https://github.com/Matriz-AI/registry/tree/main/skills/grill-me",
+  "repository": "https://github.com/Matriz-AI/registry",
+  "path": "skills/grill-me",
+  "license": "MIT",
+  "interface": {
+    "displayName": "Grill Me",
+    "logo": "https://raw.githubusercontent.com/Matriz-AI/registry/main/skills/grill-me/assets/icon.svg",
+    "shortDescription": "Start a relentless plan interview.",
+    "category": "Productivity",
+    "capabilities": ["Read"],
+    "defaultPrompt": [
+      "Grill me about this plan one question at a time.",
+      "Start a relentless interview about this decision.",
+      "Stress-test this design before we act."
+    ]
+  }
+}

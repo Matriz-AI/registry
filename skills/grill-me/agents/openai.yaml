@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grill Me"
+  short_description: "Start a relentless plan interview."
+  default_prompt: "Run a grilling session about this plan."

@@ -1,0 +1,22 @@
+{
+  "name": "grilling",
+  "version": "1.0.0",
+  "description": "Relentlessly stress-test a plan, decision, design, or idea through a structured one-question-at-a-time interview.",
+  "author": { "name": "Matriz AI" },
+  "homepage": "https://github.com/Matriz-AI/registry/tree/main/skills/grilling",
+  "repository": "https://github.com/Matriz-AI/registry",
+  "path": "skills/grilling",
+  "license": "MIT",
+  "interface": {
+    "displayName": "Grilling",
+    "logo": "https://raw.githubusercontent.com/Matriz-AI/registry/main/skills/grilling/assets/icon.svg",
+    "shortDescription": "Stress-test plans one question at a time.",
+    "category": "Productivity",
+    "capabilities": ["Read"],
+    "defaultPrompt": [
+      "Interview me relentlessly about this plan.",
+      "Walk through every dependency in this decision.",
+      "Help me reach shared understanding before acting."
+    ]
+  }
+}
