@@ -13,3 +13,7 @@ The skills listed below were imported unchanged from [`anthropics/skills`](https
 - `webapp-testing`
 
 Each imported skill retains its original `LICENSE.txt`, which is Apache License 2.0. The document skills (`docx`, `pdf`, `pptx`, and `xlsx`) were deliberately not imported because their source-available terms prohibit redistribution. `doc-coauthoring` was not imported because no explicit redistribution license was present.
+
+## Google Workspace MCP
+
+The `google-workspace` skill launches [`workspace-mcp`](https://github.com/taylorwilsdon/google_workspace_mcp) version `1.22.1` at runtime through `uvx`. The package is maintained by its upstream community and distributed under the MIT License. It is referenced by version and is not vendored into this registry.

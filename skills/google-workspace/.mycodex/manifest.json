@@ -1,0 +1,103 @@
+{
+  "name": "google-workspace",
+  "version": "0.1.0",
+  "description": "Connect Google Workspace to MyCodex through a local MCP server for Drive, Docs, Sheets, Slides, Gmail, Calendar and more.",
+  "author": {
+    "name": "Matriz AI",
+    "url": "https://github.com/Matriz-AI"
+  },
+  "homepage": "https://github.com/Matriz-AI/registry/tree/main/skills/google-workspace",
+  "repository": "https://github.com/Matriz-AI/registry",
+  "path": "skills/google-workspace",
+  "license": "MIT",
+  "keywords": [
+    "google",
+    "workspace",
+    "mcp",
+    "drive",
+    "docs",
+    "sheets",
+    "slides",
+    "gmail",
+    "calendar"
+  ],
+  "interface": {
+    "displayName": "Google Workspace",
+    "shortDescription": "Access Drive, Docs, Sheets, Gmail, Calendar and more through MCP.",
+    "longDescription": "Connect a Google account with local OAuth and give MyCodex a broad, pinned Google Workspace MCP toolset. Credentials stay on this machine and the integration supports Drive, Docs, Sheets, Slides, Gmail, Calendar, Chat, Contacts, Forms, Tasks, Apps Script and Search.",
+    "developerName": "Matriz AI",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Execute", "Network", "Persist"],
+    "websiteURL": "https://github.com/taylorwilsdon/google_workspace_mcp",
+    "privacyPolicyURL": "https://github.com/taylorwilsdon/google_workspace_mcp#security",
+    "brandColor": "#4285F4",
+    "composerIcon": "Blocks",
+    "logo": "https://raw.githubusercontent.com/Matriz-AI/registry/main/skills/google-workspace/assets/icon.svg",
+    "defaultPrompt": [
+      "Find my latest project documents in Google Drive and summarize them.",
+      "Read the budget spreadsheet and identify the largest variances.",
+      "Draft a Google Doc from these notes, but show me the proposed structure first."
+    ]
+  },
+  "integration": {
+    "kind": "mcp",
+    "transport": "stdio",
+    "toolset": "google-workspace",
+    "services": [
+      "Drive",
+      "Docs",
+      "Sheets",
+      "Slides",
+      "Gmail",
+      "Calendar",
+      "Chat",
+      "Contacts",
+      "Forms",
+      "Tasks",
+      "Apps Script",
+      "Search"
+    ],
+    "runtime": {
+      "type": "uvx",
+      "package": "workspace-mcp",
+      "version": "1.22.1",
+      "command": "workspace-mcp",
+      "args": ["--tool-tier", "core"]
+    },
+    "authentication": {
+      "type": "local-oauth",
+      "fields": [
+        {
+          "key": "accountEmail",
+          "label": "Google account",
+          "type": "email",
+          "required": true,
+          "secret": false,
+          "description": "Default Google account used by Workspace MCP tools."
+        },
+        {
+          "key": "clientSecret",
+          "label": "client_secret.json",
+          "type": "file",
+          "required": true,
+          "secret": true,
+          "accept": "application/json,.json",
+          "description": "OAuth Desktop application credentials downloaded from Google Cloud."
+        }
+      ],
+      "probe": {
+        "tool": "list_calendars",
+        "arguments": {
+          "user_google_email": "{{accountEmail}}"
+        }
+      }
+    },
+    "argumentDefaults": {
+      "user_google_email": "{{accountEmail}}"
+    },
+    "timeouts": {
+      "connectMs": 120000,
+      "callMs": 310000
+    }
+  }
+}
